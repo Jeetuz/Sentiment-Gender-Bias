@@ -232,7 +232,7 @@ def get_sentiment(text, model, tokenizer, model_name):
   
             inputs = tokenizer(text, return_tensors="pt", truncation=True, max_length=512, padding=True)
         else:
-            inputs = tokenizer(text, return_tensors="pt", truncation=True, max_length=512)
+            inputs = tokenizer(text, return_tensors="pt", truncation=True, max_length=512,padding=True)
             
         with st.spinner("Analyzing text..."):
             logits = model(**inputs).logits
