@@ -573,8 +573,7 @@ def main():
             model, tokenizer = load_selected_model_and_tokenizer(selected_model_name)
             st.success(f"Successfully loaded {selected_model_name}")
         except Exception as e:
-            st.error(f"Failed to load {selected_model_name}: {str(e)}")
-            st.info("Falling back to Twitter-RoBERTa model")
+
             selected_model_name = "Twitter-RoBERTa"
             model, tokenizer = load_selected_model_and_tokenizer(selected_model_name)
         
