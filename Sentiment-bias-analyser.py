@@ -112,7 +112,6 @@ def load_bertweet_model():
         model.save_pretrained(model_dir)
         return model
     except Exception as e:
-        st.info("Falling back to Twitter-RoBERTa model.")
         return load_roberta_model()
 
 def load_distilbert_model():
