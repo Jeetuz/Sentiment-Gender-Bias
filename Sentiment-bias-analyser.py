@@ -507,7 +507,7 @@ def show_troubleshooting():
         """)
 
 def main():
-    st.title("Gender Bias Text Analyzer")
+    st.title("Sentiment Based Gender Bias Text Analyzer")
     
     st.sidebar.header("Model Settings")
     
