@@ -79,7 +79,7 @@ def load_roberta_model():
         model.save_pretrained(model_dir)
         return model
     except Exception as e:
-        st.error(f"Failed to load Twitter-RoBERTa model: {str(e)}")
+   
         st.stop()
 
 def load_bertweet_model():
